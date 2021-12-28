@@ -18,13 +18,23 @@
     </header>
     <section id="styling">
       <div 
-        class="demo" 
-        :style="{borderColor: boxAClicked ? 'red' : 'black'}" 
+        class="demo"
+        :class="{active: boxAClicked}" 
         @click="boxClicked('A')"
       >
       </div>
-      <div class="demo" @click="boxClicked('B')"></div>
-      <div class="demo" @click="boxClicked('C')"></div>
+      <div 
+        class="demo"
+        :class="{active: boxBClicked}" 
+         @click="boxClicked('B')"
+       >
+      </div>
+      <div 
+        class="demo" 
+        :class="{active: boxCClicked}" 
+        @click="boxClicked('C')"
+      >
+      </div>
     </section>
   </body>
 </html>

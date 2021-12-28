@@ -19,13 +19,13 @@ const app = Vue.createApp({
     boxClicked(box) {
       switch(box) {
         case 'A':
-          this.boxAClicked = true
+          this.boxAClicked = this.boxAClicked ? false : true
           break
         case 'B':
-          this.boxBClicked = true
+          this.boxBClicked = this.boxBClicked ? false : true
           break
         case 'C':
-          this.boxCClicked = true
+          this.boxCClicked = this.boxCClicked ? false : true
           break
       }
     }
